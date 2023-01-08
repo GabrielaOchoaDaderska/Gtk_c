@@ -4,7 +4,7 @@
 #include<string.h>
 #include<stdlib.h>
 #include<dirent.h>
-
+//
 GtkWidget* window;
 GtkWidget* list;
 GtkWidget* directory;
