@@ -1,6 +1,8 @@
 #include <gtk/gtk.h>
 #include <stdlib.h>
 
+//kod w wersji próbnej 
+
 int main(int argc, char *argv[])
 {
     GtkWidget *dialog;
