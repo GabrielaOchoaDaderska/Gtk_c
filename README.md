@@ -77,3 +77,6 @@ gtk_main();
 ![obraz](https://user-images.githubusercontent.com/108947060/212930944-f5cba3bc-be7a-471d-bdd7-fec82d279f4f.png)
 
 ---
+## License
+
+MIT
