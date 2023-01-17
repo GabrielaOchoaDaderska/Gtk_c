@@ -2,7 +2,7 @@
 
 *Program "Przeglądarka plików" pozwala na wybór interesującego nas folderu, a następnie wyświetlanie wszystkich plików i katalogów w nim zawartych, wraz ze szczegółowymi informacjami o nich.*
 
-**(Poniższy poradnik jest przeznaczony na systemy Windows)
+** (Poniższy poradnik jest przeznaczony na systemy Windows) **
 
 ## Instalacja [GTK+](https://www.gtk.org/)
 - Program do odpalania programu 
