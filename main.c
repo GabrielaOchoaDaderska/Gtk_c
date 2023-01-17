@@ -28,6 +28,7 @@ int main (int argc, char **argv)
     gtk_file_filter_add_pattern(filter, "*.*");
     gtk_file_chooser_add_filter(GTK_FILE_CHOOSER(file_chooser), filter);
 
+   
     // Dodawanie widgetu do głównego okna
     gtk_container_add(GTK_CONTAINER(window), file_chooser);
 
