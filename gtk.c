@@ -3,7 +3,7 @@
 #include <string.h>
 #include <sys/stat.h>
 
-//Funkcja wyœwietlaj¹ca informacje o pliku lub folderze.
+//Funkcja wyswietlajaca informacje o pliku lub folderze.
 void show_details(GtkWidget *widget, gpointer window)
 {
     gchar *file = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(window));
@@ -20,11 +20,11 @@ void show_details(GtkWidget *widget, gpointer window)
 
     if(S_ISREG(buf.st_mode)) {
         gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
-        "Typ pliku: Plik zwyk³y\nRozmiar: %ld bajtów\nUstawienia dostêpu: %3lo",
+        "Typ pliku: Plik zwykly\nRozmiar: %ld bajtÃ³w\nUstawienia dostepu: %3lo",
         buf.st_size, buf.st_mode & 0777);
     } else if(S_ISDIR(buf.st_mode)) {
         gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog),
-        "Typ pliku: Katalog\nUstawienia dostêpu: %3lo",
+        "Typ pliku: Katalog\nUstawienia dostepu: %3lo",
         buf.st_mode & 0777);
     }
 
@@ -42,15 +42,15 @@ int main(int argc, char *argv[])
     gtk_init(&argc, &argv);
 
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(window), "Przegl¹darka plików");
+    gtk_window_set_title(GTK_WINDOW(window), "Przegladarka plikÃ³w");
     gtk_window_set_default_size(GTK_WINDOW(window), 300, 200);
     gtk_container_set_border_width(GTK_CONTAINER(window), 10);
 
     chooser = gtk_file_chooser_widget_new(GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
     gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(chooser), g_get_home_dir());
 
-    button = gtk_button_new_with_label("Poka¿ informacje");
-    g_signal_connect(button, "clicked", G_CALLBACK(show_details), chooser);
+    //button = gtk_button_new_with_label("Pokaz informacje");
+    //g_signal_connect(button, "clicked", G_CALLBACK(show_details), chooser);
 
     vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_box_pack_start(GTK_BOX(vbox), chooser, TRUE, TRUE, 5);
