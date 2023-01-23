@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
     vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_box_pack_start(GTK_BOX(vbox), chooser, TRUE, TRUE, 5);
-    gtk_box_pack_start(GTK_BOX(vbox), button, FALSE, FALSE, 5);
+    //gtk_box_pack_start(GTK_BOX(vbox), button, FALSE, FALSE, 5);
     gtk_container_add(GTK_CONTAINER(window), vbox);
 
     g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
